@@ -1,0 +1,30 @@
+
+
+.conta
+{
+height: 100px;
+width: 500px;
+border-radius: 50px;
+
+
+}
+
+.boby
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.des
+{
+    height: 100px;
+    width: 350px;
+}
+
+.carro
+{
+    display: flex;
+    justify-content: center;
+}
