@@ -42,7 +42,7 @@
           <form action="{{route('recuper_id')}} " method="post">
             @csrf
 <input type="hidden" name="id" value="{{$articles->id}}">
-<input type="submit" value="cancella">
+<input class="btn btn-danger" type="submit" value="effacer">
           </form>
 
           </div>

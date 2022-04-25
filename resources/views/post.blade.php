@@ -11,12 +11,17 @@
 
             <img style="height: 600px" src="{{ $article->image }}" alt="">
 
+<div  style="display: flex;justify-content:center;width:600px" class=" alert alert-primary" role="alert">
+                <p>{{ $article->prix }}</p>
 
-            <p>{{ $article->prix }}</p>
+</div>
+<div  style=" width:600px" class="alert alert-primary" role="alert">
+
 
             <p>{{ $article->description }}</p>
 
-            @guest
+       </div>
+         @guest
                 @if (Route::has('login'))
 
 
