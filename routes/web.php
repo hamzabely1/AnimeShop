@@ -38,7 +38,7 @@ Route::get('panier',[paniercontro::class,'index'])->name('panier');
 
 
 
-Route::get('admin',[admincontro::class,'index'])->name('admin_index');
+Route::get('admin',[admincontro::class,'index'])->middleware('auth')->name('admin_index');
 
 Route::post('add/post',[addpostcontro::class,'store'])->name('postadd');
 
