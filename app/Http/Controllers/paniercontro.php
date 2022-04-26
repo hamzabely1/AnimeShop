@@ -18,9 +18,17 @@ class paniercontro extends Controller
         return view('panier',compact('panier'));
     }
 
-  public function add(){
-      return redirect()->route('home');
-  }
+  public function add(Request $request){
 
 
+$panier = new \App\Models\panier();
+
+        $panier->nom = $request->nom;
+        $panier->image = $request->image;
+        $panier->prix= $request->prix;
+        $panier->save();
+
+        return redirect()->route('home');
+
+}
 }

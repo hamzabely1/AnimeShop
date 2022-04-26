@@ -7,6 +7,31 @@
 
 
 
+@foreach ($panier as $paniers)
+
+<div class="card">
+    <div class="card-body">
+
+
+
+{{$paniers->nom}}
+
+<img style="height:70px" src="{{$paniers->image}}" alt="">
+
+
+{{$paniers->prix}}$
+    </div>
+  </div>
+@endforeach
+
+
+
+
+
+
+
+
+
 
 
 
