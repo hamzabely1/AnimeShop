@@ -12,9 +12,9 @@ class cate extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($prix)
+    public function index()
     {
-       $cate = article::find($prix);
+       $cate = article::where('prix',50)->get();
        return view('cate',compact('cate'));
     }
 
