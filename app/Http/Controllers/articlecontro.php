@@ -15,6 +15,7 @@ return view('home',compact('article','categori'));
 
 
 
+
     }
 
 

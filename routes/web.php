@@ -3,6 +3,7 @@
 use App\Http\Controllers\addpostcontro;
 use App\Http\Controllers\admincontro;
 use App\Http\Controllers\articlecontro;
+use App\Http\Controllers\cate;
 use App\Http\Controllers\paniercontro;
 use App\Http\Controllers\postcontro;
 use Illuminate\Support\Facades\Route;
@@ -52,3 +53,4 @@ Route::post('recuper/id',[admincontro::class,'subrime'])->name('recuper_id');
 
 
 
+Route::get('/cate',[cate::class,'index']);

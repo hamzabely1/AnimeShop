@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\article;
 use Illuminate\Http\Request;
 
 class cate extends Controller
@@ -11,9 +12,10 @@ class cate extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($prix)
     {
-       
+       $cate = article::find($prix);
+       return view('cate',compact('cate'));
     }
 
     /**
