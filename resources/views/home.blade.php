@@ -10,9 +10,10 @@
 
     <h1 class="categori" style="display: flex;justify-content:center">categories</h1>
     <div class="ma">
-
-        <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate1.jpg') }}"
+<a href=""><img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate1.jpg') }}"
             class="rounded float-start " alt="...">
+        </a>
+
         <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate2.webp') }}"
             class="rounded float-center" alt="...">
         <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate3.jpg') }}"

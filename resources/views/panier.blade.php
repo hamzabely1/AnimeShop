@@ -20,8 +20,19 @@
 
 
 {{$paniers->prix}}$
+
+<div class="bnt btn-danger">subrime</div>
+
+
+
     </div>
+
+
   </div>
+
+
+
+
 @endforeach
 
 
