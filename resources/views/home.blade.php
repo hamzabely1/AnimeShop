@@ -21,6 +21,17 @@
             class="rounded float-center" alt="...">
     </div>
     </div>
+
+<div style="display:flex; justify-content:space-around">
+    @foreach ($categori as $categoris )
+
+
+    <a href=""><h4>{{$categoris->nom}}</h4></a>
+
+    @endforeach
+
+</div>
+
     <h2 style="display: flex;justify-content:center">En évidence</h2>
 
 

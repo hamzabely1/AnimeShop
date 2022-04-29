@@ -50,3 +50,5 @@ Route::get('page/add/post',[addpostcontro::class,'index'])->name('add/page/post'
 Route::post('recuper/id',[admincontro::class,'subrime'])->name('recuper_id');
 
 
+
+
