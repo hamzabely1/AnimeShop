@@ -31,7 +31,7 @@ Route::get('/home',[articlecontro::class,'index'])->name('home');
 
 
 Route::get('/post/{id}',[postcontro::class,'index']);
-Route::get('panier',[paniercontro::class,'index'])->name('panier');
+Route::get('panier',[paniercontro::class,'index'])->middleware('auth')->name('panier');
 
 
 
@@ -42,7 +42,7 @@ Route::get('admin',[admincontro::class,'index'])->middleware('auth')->name('admi
 
 Route::post('add/post',[addpostcontro::class,'store'])->name('postadd');
 
-Route::post('panier/add',[paniercontro::class,'add'])->middleware()->name('panier_add');
+Route::post('panier/add',[paniercontro::class,'add'])->middleware('auth')->name('panier_add');
 
 
 Route::get('page/add/post',[addpostcontro::class,'index'])->name('add/page/post');
