@@ -32,7 +32,7 @@ Route::get('/home',[articlecontro::class,'index'])->name('home');
 
 
 Route::get('/post/{id}',[postcontro::class,'index']);
-Route::get('panier',[paniercontro::class,'index'])->name('panier');
+Route::get('panier',[paniercontro::class,'index'])->middleware('auth')->name('panier');
 
 
 
@@ -51,4 +51,8 @@ Route::get('page/add/post',[addpostcontro::class,'index'])->name('add/page/post'
 Route::post('recuper/id',[admincontro::class,'subrime'])->name('recuper_id');
 
 
-Route::get('cate',[cate::class,'index']);
+
+
+
+
+Route::get('/cate',[cate::class,'index'])->name('view_cate');

@@ -14,10 +14,8 @@ class cate extends Controller
      */
     public function index()
     {
-$cate= \App\Models\article::where('category','naruto')->get();
-
-dd($cate);
-return view('categori',compact('cate'));
+       $cate = article::where('categoty','naruto')->get();
+       return view('cate',compact('cate'));
     }
 
     /**
