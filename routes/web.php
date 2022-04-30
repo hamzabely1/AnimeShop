@@ -55,4 +55,10 @@ Route::post('recuper/id',[admincontro::class,'subrime'])->name('recuper_id');
 
 
 
-Route::get('/cate',[cate::class,'index'])->name('view_cate');
+Route::get('/cate/one/piece',[cate::class,'one_piece'])->name('view_cate_one_piece');
+
+Route::get('/catea/attack',[cate::class,'attack'])->name('view_cate_attack');
+
+Route::get('/cated/dragon',[cate::class,'dragon'])->name('view_cate_dragon');
+
+Route::get('/caten/naruto',[cate::class,'naruto'])->name('view_cate_naruto');

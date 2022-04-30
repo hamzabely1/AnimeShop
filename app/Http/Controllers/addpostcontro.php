@@ -42,6 +42,8 @@ class addpostcontro extends Controller
         $form->image = $request->image;
         $form->prix= $request->prix;
         $form->description = $request->description;
+        $form->categoty = $request->categoty;
+
         $form->save();
 
 return view('link');

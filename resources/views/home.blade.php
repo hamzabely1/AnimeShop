@@ -10,16 +10,30 @@
 
     <h1 class="categori" style="display: flex;justify-content:center">categories</h1>
     <div class="ma">
-<a href="{{route('view_cate')}}"><img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate1.jpg') }}"
+<a href="{{route('view_cate_one_piece')}}"><img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate1.jpg') }}"
             class="rounded float-start " alt="...">
         </a>
+<a href="{{route('view_cate_attack')}}">
 
-        <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate2.webp') }}"
+     <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate2.webp') }}"
             class="rounded float-center" alt="...">
-        <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate3.jpg') }}"
+</a>
+<a href="{{route('view_cate_dragon')}}">
+
+ <img class='m' style="height: 180px;border-radius:10px" src="{{ asset('img/cate3.jpg') }}"
             class="rounded float-center" alt="...">
+
+
+</a>
+<a href="{{route('view_cate_naruto')}}">
+
+
         <img class='m' style="height: 180px;border-radius:10px;" src="{{ asset('img/cate4.jpg') }}"
             class="rounded float-center" alt="...">
+
+</a>
+
+
     </div>
     </div>
 

@@ -12,9 +12,9 @@ class cate extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function one_piece()
     {
-       $cate = article::where('categoty','naruto')->get();
+       $cate = article::where('categoty','one piece')->get();
        return view('cate',compact('cate'));
     }
 
@@ -23,9 +23,10 @@ class cate extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function attack()
     {
-        //
+        $cate = article::where('categoty','attack')->get();
+        return view('cate',compact('cate'));
     }
 
     /**
@@ -34,9 +35,10 @@ class cate extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function dragon()
     {
-        //
+        $cate = article::where('categoty','dragon')->get();
+        return view('cate',compact('cate'));
     }
 
     /**
@@ -45,9 +47,10 @@ class cate extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function naruto()
     {
-        //
+        $cate = article::where('categoty','naruto')->get();
+       return view('cate',compact('cate'));
     }
 
     /**
