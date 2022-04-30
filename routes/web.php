@@ -62,3 +62,6 @@ Route::get('/catea/attack',[cate::class,'attack'])->name('view_cate_attack');
 Route::get('/cated/dragon',[cate::class,'dragon'])->name('view_cate_dragon');
 
 Route::get('/caten/naruto',[cate::class,'naruto'])->name('view_cate_naruto');
+
+
+Route::get('/subrime',[paniercontro::class,'subrime'])->name('subrime_artciles');

@@ -31,4 +31,13 @@ $panier = new \App\Models\panier();
         return redirect()->route('home');
 
 }
+
+
+
+
+public function subrime(request $request){
+    $dele =panier::find($request->id);
+    $dele->delete();
+    return redirect()->route('panier');
+}
 }
