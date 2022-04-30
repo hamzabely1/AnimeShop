@@ -40,4 +40,12 @@ public function subrime(request $request){
     $dele->delete();
     return redirect()->route('panier');
 }
+
+public function deledtous(){
+    $ded = panier::all();
+    $ded ->delete();
+
+}
+
+
 }

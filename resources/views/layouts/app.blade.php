@@ -59,7 +59,7 @@
                                 <a style="text-decoration: none;color:white"  class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name}}
                                 </a>
-                                    <a style="text-decoration: none;color:red" class="nav-link" href="{{ route('logout') }}"
+                                    <a style="text-decoration: none;color:red" class="nav-link" href="{{ route('logout') }}" 
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Se déconnecter') }}

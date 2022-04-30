@@ -41,7 +41,7 @@ Route::get('panier',[paniercontro::class,'index'])->middleware('auth')->name('pa
 
 Route::get('admin',[admincontro::class,'index'])->middleware('auth')->name('admin_index');
 
-Route::post('add/post',[addpostcontro::class,'store'])->name('postadd');
+Route::post('add/post',[addpostcontro::class,'store'])->middleware('auth')->name('postadd');
 
 Route::post('panier/add',[paniercontro::class,'add'])->middleware('auth')->name('panier_add');
 
@@ -64,4 +64,8 @@ Route::get('/cated/dragon',[cate::class,'dragon'])->name('view_cate_dragon');
 Route::get('/caten/naruto',[cate::class,'naruto'])->name('view_cate_naruto');
 
 
-Route::get('/subrime',[paniercontro::class,'subrime'])->name('subrime_artciles');
+Route::get('/subrime',[paniercontro::class,'subrime'])->middleware('auth')->name('subrime_artciles');
+
+
+
+Route::get('deled/panier',[paniercontro::class,'deledtous'])->middleware('auth')->name('deledtous');

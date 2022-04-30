@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Mes Produit</h1>
+<h1>Mes Produits</h1>
 
 <div style="display: flex;justify-content:center">
     <h4>Ajjiute une article</h4>
