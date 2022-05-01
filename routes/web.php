@@ -55,13 +55,16 @@ Route::post('recuper/id',[admincontro::class,'subrime'])->name('recuper_id');
 
 
 
-Route::get('/cate/one/piece',[cate::class,'one_piece'])->name('view_cate_one_piece');
+Route::get('/cate/one',[cate::class,'one_piece'])->name('view_cate_one_piece');
 
-Route::get('/catea/attack',[cate::class,'attack'])->name('view_cate_attack');
+Route::get('/cate/attack',[cate::class,'attack'])->name('view_cate_attack');
 
-Route::get('/cated/dragon',[cate::class,'dragon'])->name('view_cate_dragon');
+Route::get('/cate/dragon',[cate::class,'dragon'])->name('view_cate_dragon');
 
-Route::get('/caten/naruto',[cate::class,'naruto'])->name('view_cate_naruto');
+Route::get('/cate/naruto',[cate::class,'naruto'])->name('view_cate_naruto');
+
+
+
 
 
 Route::get('/subrime',[paniercontro::class,'subrime'])->middleware('auth')->name('subrime_artciles');
@@ -69,3 +72,12 @@ Route::get('/subrime',[paniercontro::class,'subrime'])->middleware('auth')->name
 
 
 Route::get('deled/panier',[paniercontro::class,'deledtous'])->middleware('auth')->name('deledtous');
+
+
+Route::get('panier/com',[paniercontro::class,'prix']);
+
+
+
+
+
+Route::get('route/info',[cate::class,'info'])->name('info');

@@ -8,6 +8,7 @@ use App\Models\panier;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\returnSelf;
 
 class paniercontro extends Controller
 {
@@ -15,7 +16,8 @@ class paniercontro extends Controller
 
     public function index(){
         $panier= panier::all();
-        return view('panier',compact('panier'));
+        $prix = panier::where('prix')->get();
+        return view('panier',compact('panier','prix'));
     }
 
   public function add(Request $request){
@@ -35,17 +37,24 @@ $panier = new \App\Models\panier();
 
 
 
-public function subrime(request $request){
+public function subrime (request $request){
+
     $dele =panier::find($request->id);
-    $dele->delete();
-    return redirect()->route('panier');
-}
-
-public function deledtous(){
-    $ded = panier::all();
-    $ded ->delete();
+        $dele->delete();
+        return redirect()->route('home');
 
 }
+
+
+
+public function prix(){
+
+
+    $prix = panier::where('prix')->get();
+redirect()->route('panier',compact('prix'));
+
+}
+
 
 
 }

@@ -12,15 +12,30 @@
               <p>{{$cates->nom}}</p>
             <img src={{$cates->image}}  style="height: 250px; width: 250px;" alt="">
 <br>
-            <a style="text-decoration: none;color:black" href="post/{{$key = $key +1 }}"> <div id="quaa"><button type="button" class="btn btn-pericolo"
 
 
-              <div>
-              info
-              </div>
-</a>
+<form action="{{route('info')}}">
 
-              <br>
+
+<input type="hidden"   name="id" value="{{$cates->id}}">
+<input type="hidden" name="nom" value="{{$cates->nom}}">
+
+<input type="hidden" name="image" value="{{$cates->image}}">
+<input type="hidden" name="prix" value="{{$cates->prix}}">
+<input type="hidden" name="description" value="{{$cates->description}}">
+
+
+
+
+
+
+
+
+
+            <input class="btn btn-dark" type="submit" value="info">
+
+</form>
+     <br>
           </div>
 
 
